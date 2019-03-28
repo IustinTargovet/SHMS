@@ -1,0 +1,12 @@
+{
+  "mongoDs": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "SHMS_Final",
+    "password": "",
+    "name": "mongoDs",
+    "user": "IustinT",
+    "connector": "mongodb"
+  }
+}

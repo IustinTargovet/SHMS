@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Household": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "ShoppingList": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Item": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Fridge": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "PostIt": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Timetable": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Entry": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Tenant": {
+    "dataSource": "mongoDs",
+    "public": true
+  }
+}

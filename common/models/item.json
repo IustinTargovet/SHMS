@@ -1,0 +1,36 @@
+{
+  "name": "Item",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Desc": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Puchased": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "shoppingList": {
+      "type": "belongsTo",
+      "model": "ShoppingList",
+      "foreignKey": ""
+    },
+    "tenant": {
+      "type": "belongsTo",
+      "model": "Tenant",
+      "foreignKey": "publisherId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

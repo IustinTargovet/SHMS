@@ -1,0 +1,29 @@
+{
+  "name": "Fridge",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "household": {
+      "type": "belongsTo",
+      "model": "Household",
+      "foreignKey": ""
+    },
+    "postIts": {
+      "type": "hasMany",
+      "model": "PostIt",
+      "foreignKey": ""
+    },
+    "tenant": {
+      "type": "belongsTo",
+      "model": "Tenant",
+      "foreignKey": "publisherId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
