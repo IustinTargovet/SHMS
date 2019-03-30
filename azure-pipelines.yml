@@ -29,7 +29,7 @@ steps:
 
 - task: AzureRmWebAppDeployment@3
   inputs:
-    azureSubscription: 'Microsoft Azure Sponsorship 2'
+    azureSubscription: '035eef4a-9f3b-48a8-9372-88219f8a96ca'
     WebAppName: 'SHMS-1'
     Package: '$(System.DefaultWorkingDirectory)'
     GenerateWebConfig: true
