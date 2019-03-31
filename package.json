@@ -10,6 +10,10 @@
     "start": "node .",
     "posttest": "npm run lint"
   },
+  "engines": {
+    "node": "11.x",
+    "npm": "6.x"
+  },
   "dependencies": {
     "async": "^2.6.2",
     "compression": "^1.0.3",
