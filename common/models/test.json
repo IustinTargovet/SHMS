@@ -1,5 +1,5 @@
 {
-  "name": "tst",
+  "name": "test",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
