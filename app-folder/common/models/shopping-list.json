@@ -1,0 +1,37 @@
+{
+  "name": "ShoppingList",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Desc": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "household": {
+      "type": "belongsTo",
+      "model": "Household",
+      "foreignKey": ""
+    },
+    "items": {
+      "type": "hasMany",
+      "model": "Item",
+      "foreignKey": ""
+    },
+    "tenant": {
+      "type": "belongsTo",
+      "model": "Tenant",
+      "foreignKey": "publisherId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Household",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "tenants": {
+      "type": "hasMany",
+      "model": "Tenant",
+      "foreignKey": ""
+    },
+    "shoppingLists": {
+      "type": "hasMany",
+      "model": "ShoppingList",
+      "foreignKey": ""
+    },
+    "fridges": {
+      "type": "hasOne",
+      "model": "Fridge",
+      "foreignKey": ""
+    },
+    "timetables": {
+      "type": "hasMany",
+      "model": "Timetable",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

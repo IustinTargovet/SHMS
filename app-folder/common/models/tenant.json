@@ -1,0 +1,49 @@
+{
+  "name": "Tenant",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "household": {
+      "type": "belongsTo",
+      "model": "Household",
+      "foreignKey": ""
+    },
+    "timetables": {
+      "type": "hasMany",
+      "model": "Timetable",
+      "foreignKey": "publisherId"
+    },
+    "fridges": {
+      "type": "hasMany",
+      "model": "Fridge",
+      "foreignKey": "publisherId"
+    },
+    "shoppingLists": {
+      "type": "hasMany",
+      "model": "ShoppingList",
+      "foreignKey": "publisherId"
+    },
+    "items": {
+      "type": "hasMany",
+      "model": "Item",
+      "foreignKey": "publisherId"
+    },
+    "postIts": {
+      "type": "hasMany",
+      "model": "PostIt",
+      "foreignKey": "publisherId"
+    },
+    "entries": {
+      "type": "hasMany",
+      "model": "Entry",
+      "foreignKey": "publisherId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
