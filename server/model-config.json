@@ -14,35 +14,35 @@
     ]
   },
   "Household": {
-    "dataSource": "mongoDs",
+    "dataSource": "mongoAtlas",
     "public": true
   },
   "ShoppingList": {
-    "dataSource": "mongoDs",
+    "dataSource": "mongoAtlas",
     "public": true
   },
   "Item": {
-    "dataSource": "mongoDs",
+    "dataSource": "mongoAtlas",
     "public": true
   },
   "Fridge": {
-    "dataSource": "mongoDs",
+    "dataSource": "mongoAtlas",
     "public": true
   },
   "PostIt": {
-    "dataSource": "mongoDs",
+    "dataSource": "mongoAtlas",
     "public": true
   },
   "Timetable": {
-    "dataSource": "mongoDs",
+    "dataSource": "mongoAtlas",
     "public": true
   },
   "Entry": {
-    "dataSource": "mongoDs",
+    "dataSource": "mongoAtlas",
     "public": true
   },
   "Tenant": {
-    "dataSource": "mongoDs",
+    "dataSource": "mongoAtlas",
     "public": true
   }
 }
