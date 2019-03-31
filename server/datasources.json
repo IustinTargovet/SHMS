@@ -1,14 +1,4 @@
 {
-  "mongoDs": {
-    "host": "localhost",
-    "port": 27017,
-    "url": "",
-    "database": "SHMS_Final",
-    "password": "",
-    "name": "mongoDs",
-    "user": "IustinT",
-    "connector": "mongodb"
-  },
   "mongoAtlas": {
     "host": "cluster0-g2k95.gcp.mongodb.net",
     "port": 27017,
