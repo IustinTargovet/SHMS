@@ -44,9 +44,5 @@
   "Tenant": {
     "dataSource": "mongoAtlas",
     "public": true
-  },
-  "test": {
-    "dataSource": "mongoAtlas",
-    "public": true
   }
 }
