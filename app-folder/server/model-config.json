@@ -13,6 +13,26 @@
       "./mixins"
     ]
   },
+  "User": {
+    "dataSource": "mongoAtlas",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mongoAtlas",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongoAtlas",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongoAtlas",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mongoAtlas",
+    "public": false
+  },
   "Household": {
     "dataSource": "mongoAtlas",
     "public": true

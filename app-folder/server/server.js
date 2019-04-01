@@ -31,13 +31,22 @@ app.get('/authorized', function(req, res) {
 });
 
 // apply to a path
-// app.use('/api/households', function(req, res, next) {
-//   res.json('It has valid token', req.user);
-// });
+//  app.use('/api/households', function(req, res, next) {
+//    res.json('It has valid token', req.user);
+//  });
 
 app.use(function(err, req, res, next) {
   if (err.name === 'UnauthorizedError') {
-    res.status(401).send('Invalid token, or no token supplied!');
+    res.status(401).send('<a href="https://shs-auth.eu.auth0.com/authorize?' +
+      '  response_type=id_token|token&' +
+      '  client_id=Fw6ahYt5V94BbahufJIyAsZ8oPgHOhw0&' +
+      '  redirect_uri=https://localhost:3000/callback&' +
+      '  scope=read:tests&' +
+      '  audience=https://student-household-ms.com&' +
+      '  state=xyzABC123&' +
+      '  nonce=eq...hPmz">' +
+      '  Sign In\n' +
+      '</a> ');
   } else {
     res.status(401).send(err);
   }
