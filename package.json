@@ -1,0 +1,23 @@
+{
+  "name": "SHMS_1",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": "11.x",
+    "npm": "6.x"
+  },
+  "scripts": {
+    "start": "node .",
+    "test": "cd app-folder && mocha --exit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.0.2"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "SHMS_1"
+}

@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint",
-    "test": "mocha --exit"
+    "test": "cd app-folder; mocha --exit"
   },
   "dependencies": {
     "async": "^2.6.2",
