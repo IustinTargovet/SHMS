@@ -7,9 +7,7 @@
     "npm": "6.x"
   },
   "scripts": {
-    "lint": "eslint .",
-    "start": "node .",
-    "posttest": "npm run lint",
+    "start": "mocha --exit && node .",
     "test": "cd app-folder; sudo mocha --exit"
   },
   "dependencies": {
