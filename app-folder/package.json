@@ -7,7 +7,7 @@
     "npm": "6.x"
   },
   "scripts": {
-    "start": "mocha --exit && node .",
+    "start": "node .",
     "test": "cd app-folder; sudo mocha --exit"
   },
   "dependencies": {
