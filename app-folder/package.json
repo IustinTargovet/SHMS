@@ -9,7 +9,8 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "test": "mocha --exit"
   },
   "dependencies": {
     "async": "^2.6.2",
@@ -22,6 +23,7 @@
     "helmet": "^3.10.0",
     "jwks-rsa": "^1.4.0",
     "loopback": "^3.22.0",
+    "loopback-api-testing": "^0.3.3",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^6.2.0",
     "loopback-connector-mongodb": "^4.0.0",
@@ -29,8 +31,10 @@
     "strong-error-handler": "^3.0.0"
   },
   "devDependencies": {
+    "@loopback/testlab": "^1.2.1",
     "eslint": "^3.17.1",
-    "eslint-config-loopback": "^8.0.0"
+    "eslint-config-loopback": "^8.0.0",
+    "mocha": "^6.0.2"
   },
   "repository": {
     "type": "",

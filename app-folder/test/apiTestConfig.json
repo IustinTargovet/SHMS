@@ -1,0 +1,30 @@
+[
+  {
+    "method": "GET",
+    "model": "Tenants",
+    "expect": 401
+  },
+    {
+      "method": "POST",
+      "model": "Tenants/login",
+      "withData": {
+        "username": "moo",
+        "password": "moobar"
+      },
+      "expect": 200
+    },
+  {
+    "method": "POST",
+    "model": "Users/login",
+    "withData": {
+      "username": "foo",
+      "password": "foobar"
+    },
+    "expect": 200
+  },
+  {
+    "method": "GET",
+    "model": "Tenants",
+    "expect": 401
+  }
+]

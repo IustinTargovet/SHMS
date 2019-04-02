@@ -14,8 +14,7 @@
     ]
   },
   "User": {
-    "dataSource": "mongoAtlas",
-    "public": false
+    "dataSource": "mongoAtlas"
   },
   "AccessToken": {
     "dataSource": "mongoAtlas",

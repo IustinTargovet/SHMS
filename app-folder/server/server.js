@@ -7,7 +7,6 @@ var jwks = require('jwks-rsa');
 
 const cors = require('cors');
 
-
 var app = module.exports = loopback();
 
 var authCheck = jwt({
@@ -24,8 +23,7 @@ var authCheck = jwt({
   algorithms: ['RS256'],
 });
 
-//app.use(authCheck);
-
+// app.use(authCheck);
 app.get('/authorized', function(req, res) {
   res.send('Secured Resource');
 });
