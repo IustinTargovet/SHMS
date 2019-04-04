@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node .",
-    "test": "cd app-folder; sudo mocha --exit"
+    "test": "mocha --exit"
   },
   "dependencies": {
     "async": "^2.6.2",

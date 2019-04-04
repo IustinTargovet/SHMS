@@ -4,6 +4,36 @@
     "model": "Tenants",
     "expect": 401
   },
+  {
+    "method": "GET",
+    "model": "Fridges",
+    "expect": 401
+  },
+  {
+    "method": "GET",
+    "model": "Households",
+    "expect": 401
+  },
+  {
+    "method": "GET",
+    "model": "Entries",
+    "expect": 401
+  },
+  {
+    "method": "GET",
+    "model": "ShoppingLists",
+    "expect": 401
+  },
+  {
+    "method": "GET",
+    "model": "Items",
+    "expect": 401
+  },
+  {
+    "method": "GET",
+    "model": "PostIts",
+    "expect": 401
+  },
     {
       "method": "POST",
       "model": "Tenants/login",
