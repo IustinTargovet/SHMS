@@ -5,7 +5,12 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "Title": {
+      "type": "string",
+      "required": true
+    }
+  },
   "validations": [],
   "relations": {
     "tenants": {
@@ -19,7 +24,7 @@
       "foreignKey": ""
     },
     "fridges": {
-      "type": "hasOne",
+      "type": "hasMany",
       "model": "Fridge",
       "foreignKey": ""
     },
