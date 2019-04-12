@@ -15,7 +15,7 @@ First step is to grab the repository locally. This can be done via running the f
 git clone https://github.com/IustinTargovet/SHMS.git
 ```
 
-Next, go into the app-folder of the projct
+Next, go into the app-folder of the project
 
 ```bash
 cd SHMS_1/app-folder
